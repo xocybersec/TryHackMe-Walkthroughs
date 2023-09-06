@@ -1,7 +1,9 @@
-TryHackMe Neighbour Room
+TryHackMe <br>
+Neighbour
 
-
-We start off by navigating to the url http://ip_of_machine and viewing the source code of the home/ login page. Towards the bottom of the code we see that there are guest credentials. Let’s log in.
+---
+We start off by navigating to the url http://ip_of_machine and viewing the source code of the home/ login page. <br> 
+Towards the bottom of the code we see that there are guest credentials. Let’s log in.
 
 ![image](https://github.com/xocybersec/TryHackMe-Walkthroughs/assets/91302698/b5fa6322-7e58-4a53-aa5e-f24f5c208d93)
 
