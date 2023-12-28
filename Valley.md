@@ -60,7 +60,7 @@ Found the first flag, now to find a way to escalate my privileges. <br>
 ![image](https://github.com/xocybersec/TryHackMe-Walkthroughs/assets/91302698/9e97042f-60ad-4f75-b023-6c0af4e24238)
 ![image](https://github.com/xocybersec/TryHackMe-Walkthroughs/assets/91302698/02d5c23e-f66a-43b3-a896-ece9623f04bc)
 
-In the *home* directory there was a file of interest so I used a python server to be able to get the file to my local machine. <br>
+In the *home* directory there was a file of interest, so I used a python server to be able to get the file to my local machine. <br>
 
 ![image](https://github.com/xocybersec/TryHackMe-Walkthroughs/assets/91302698/47ad8cce-efcb-42ec-a4f1-d525a36a10cc)
 
@@ -74,8 +74,8 @@ $ wget http//:<target_IP>:1234/valleyAuthenticator
 # downloads file to local machine
 ```
 After that I used the `file` command to find out the file is an executable. <br>
-I wanted to check for name or passwords so I ran the `strings` command and couldn’t read much of anything. <br>
-At the end of the output there was a few lines with *UPX* which made me think to use that tool. <br>
+I wanted to check for name or passwords, so I ran the `strings` command and couldn’t read much of anything. <br>
+At the end of the output there were a few lines with *UPX* which made me think to use that tool. <br>
 ```
 $ upx -d valleyAuthenticator
 # decompressed the file
@@ -99,7 +99,7 @@ Now, time to check the usual and check the `/etc/crontab` file (I forgot to do t
 
 A cronjob that’s ran as root, perfect! <br>
 When inspecting the file, I tried to edit a netcat reverse shell into it, but I didn’t have permissions to save. <br>
-However, `import bas64` was at the top, so that was my next stop. <br>
+However, `import base64` was at the top, so that was my next stop. <br>
 ```
 $ locate base64
 # shows all the places a file with that in it is at.
