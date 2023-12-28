@@ -6,7 +6,7 @@ Dav
 
 Nmap:
 ```
-sudo -A -O -sC -sV <machine_IP>
+$ sudo -A -O -sC -sV <machine_IP>
 ```
 ![image](https://github.com/xocybersec/TryHackMe-Walkthroughs/assets/91302698/8f4f4c49-ed86-4cc8-bac6-2a4c462f8ae5)
 
@@ -20,7 +20,7 @@ I looked up the default credentials and found two sets. One was `jigsaw:jigsaw` 
 The other that I found was `wampp:xampp` and that worked! <br>
 I was using a tool called `cadaver` when logging in.
 ```
-cadaver http://<machine_IP>/webdav
+$ cadaver http://<machine_IP>/webdav
 ```
 
 ![image](https://github.com/xocybersec/TryHackMe-Walkthroughs/assets/91302698/4b114e1f-6c56-43df-8533-73a8766412bd)
@@ -38,6 +38,9 @@ I checked the home directory to find the user flag and grabbed that from the use
 
 Before trying to escalate privileges, I wanted to see if I could run anything as root/see what kind of cronjobs there were. <br>
 No luck on the cronjobs, *however*, what I could run as root was more than enough!
+```
+$ sudo -l
+```
 
 ![image](https://github.com/xocybersec/TryHackMe-Walkthroughs/assets/91302698/50ddadfd-d8e6-46c9-b8e1-d5ab25717e84)
 
