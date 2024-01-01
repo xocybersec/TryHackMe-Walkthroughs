@@ -20,6 +20,7 @@ Thanks to dcode[.]fr/caesar-cipher I was able to decode it but it wasn’t anyth
 ![image](https://github.com/xocybersec/TryHackMe-Walkthroughs/assets/91302698/8d01592f-3281-4b99-a494-dfff6664a207)
 
 I also ran a directory scan with Gobuster. Here are the results: 
+
 ![image](https://github.com/xocybersec/TryHackMe-Walkthroughs/assets/91302698/26475cab-556b-4a67-acd6-f17a77d87de2)
 
 # Vulnerability Assessment
