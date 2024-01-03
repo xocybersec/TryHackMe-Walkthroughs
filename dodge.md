@@ -133,5 +133,6 @@ And grabbed the final flag.
 
 It is strongly recommended to not store passwords, or any credentials, in plaintext. <br>
 Using a secure password manager would be a good remediation. <br>
+Disable anonymous login on FTP servers. <br>
 Make sure users have proper permissions assigned per their role. <br>
 Web developers should check their code and make sure what doesn’t need to be visible isn’t. <br>
